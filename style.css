@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +9,16 @@ body {
 	background-color: rgb(0, 0, 33);
 	color: white;
 	font-family: "Poppins", sans-serif;
+}
+/* Portfolio logo */
+.portfolio-logo {
+	display: flex;
+	font-family: 'Pacifico', cursive;
+}
+.folio {
+	margin: 5px;
+	font-family: 'Teko', sans-serif;
+	font-size: 2.8rem;
 }
 nav {
 	display: flex;
@@ -86,19 +99,21 @@ main hr {
 	border: 0;
 	background: rgb(145, 65, 220);
 	height: 1.2px;
-	margin: 40px 84px;
+	margin: 40px 50px;
 }
 .secondSection {
-	max-width: 80vw;
+	max-width: 100vw;
 	margin: auto;
+	margin-inline: 5vw;
     height: 80vh;
 }
+
 .secondSection h2 {
 	font-size: 1.9rem;
 }
 .secondSection .box {
 	background: white;
-	width: 77vw;
+	width: fit-content;
 	height: 2px;
 	margin: 56px 0;
 	display: flex;
@@ -108,6 +123,14 @@ main hr {
 	width: 1px;
 	background-color: white;
 	margin: 0 120px;
+}
+.work-exp {
+	height: 350px;
+	padding: 50px 0;
+	overflow-y: auto;
+}
+.work-exp::-webkit-scrollbar {
+	display: none;
 }
 .text-gray {
 	color: gray;
@@ -130,13 +153,158 @@ main hr {
 	width: 150px;
 	font-size: 9px;
 }
+/* About section */
+p.about {
+	color: rgb(232, 232, 227);
+}
+.thirdSection {
+	max-width: 100vw;
+	padding:2vw 5vw;
+	margin: auto;
+}
+
+/* Certification section */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s ease-in;
+}
+.fourthSection {
+	max-width: 100vw;
+    padding: 2vw 5vw;
+    margin: auto;
+}
+.container-certificate {
+	overflow: scroll;
+}
+.container-certificate::-webkit-scrollbar {
+	display: none;
+}
+.overflow-cont {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center	;
+}
+.certificate {
+	width: 400px;
+	height: fit-content;
+	margin: 10px;
+	background-color: white;
+}
+.certificate > img {
+	width: 100%;
+	height: 300px;
+}
+.certificate > h5 {
+	color: black;
+    margin-left: 10px;
+}
+.certificate > hr {
+	color: black;
+    margin: 0 2px;
+}
+.view-certificate {
+	width: 150px;
+    height: 40px;
+    margin: 10px;
+	cursor: pointer;
+    background: no-repeat;
+}
+.view-certificate > a {
+	width: 100%;
+    height: 100%;
+	color: black;
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+	text-decoration: inherit;
+}
+a:visited {
+	text-decoration: none;
+}
+div.issue-details {
+	width: 100%;
+	font-size: 0.8rem;
+	color: #89898a;
+	display: flex;
+}
+div.issue-details > div {
+	width: 50%;
+	padding:3px 5px;
+}
+.issue-details > .left {
+	font-size: 0.8rem;
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+
+/* Projects section */
+.fifthSection {
+	max-width: 100vw;
+    padding: 2vw 5vw;
+    margin: auto;
+}
+img.op-5 {
+	opacity: 0.5;
+}
+#projects img {
+	border: 1px solid black;
+}
+#projects .certificate {
+	border-radius: 10px;
+}
+/* Contact Form */
+.sixthSection {
+	max-width: 100vw;
+    padding: 2vw 5vw;
+    margin: auto;
+}
+input {
+    display: block;
+    width: 60vw;
+    height: 50px;
+	color: white;
+	background: none;
+    outline: none;
+    padding: 0 8px;
+    margin: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #6a04f9;
+}
+textarea {
+	width: 60vw;
+	background: none;
+	color: white;
+    outline: none;
+    padding: 0 8px;
+    margin: 10px;
+    font-size: 1.1rem;
+    border: 1px solid #6a04f9;
+}
+input[type=submit] {
+	width: 200px;
+	height: 50px;
+	background-color: #0a12f2;
+	color: white;
+	cursor: pointer;
+	border: 0;
+	border-radius: 20px;
+	font-size: 1.2rem;
+}
+/* Footer */
 footer {
-	background-color: #0e0e1a;
+	margin-top: 100px;
+	background-color: rgb(72, 72, 72);
 }
 .footer {
 	display: flex;
-	padding: 23px 122px;
+	padding-top: 50px;
 	justify-content: space-evenly;
+}
+.image-logo {
+	margin: 10px;
+	width: 30px;
 }
 .footer ul {
 	list-style: none;
@@ -145,7 +313,11 @@ footer {
 	width: 223px;
 }
 .footer-rights {
-	color: gray;
+	color: rgb(252, 130, 9);
 	text-align: center;
 	padding: 12px 0;
+}
+.footer a {
+	text-decoration: none;
+	color: white;
 }
