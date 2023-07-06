@@ -154,7 +154,7 @@ main hr {
 	font-size: 9px;
 }
 /* About section */
-p.about {
+div.about {
 	color: rgb(232, 232, 227);
 }
 .thirdSection {
