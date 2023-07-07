@@ -11,6 +11,10 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -30,6 +34,24 @@
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#contact-form">Contact Me</a></li>
 					</ul>
+				</div>
+				<style>
+					.material-symbols-outlined {
+						font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+					}
+					.material-symbols-outlined {
+						color: white;
+					}
+				</style>
+				<div class="dropdown" style="float: right">
+					<button class="dropbtn"><span class="material-symbols-outlined"> menu </span></button>
+					<div class="dropdown-content">
+						<a href="#">Home</a>
+						<a href="#about">About</a>
+						<a href="#certifications">Certifications</a>
+						<a href="#projects">Projects</a>
+						<a href="#contact-form">Contact Me</a>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -52,8 +74,67 @@
 						>
 					</div>
 				</div>
+				<style>
+					.rightSection {
+						position: relative;
+						height: 400px;
+						/* border-bottom: 2px  rgb(234, 133, 51) solid ; */
+					}
+					.top-circle {
+						width: 50%;
+						height: 50%;
+						background-color: rgb(249, 151, 71);
+						border-radius: 50%;
+						position: absolute;
+						top: -10%;
+						left: -10%;
+						opacity: 0.8;
+					}
+					.bottom-circle {
+						width: 50%;
+						height: 50%;
+						background-color: rgb(247, 114, 5);
+						border-radius: 50%;
+						position: absolute;
+						bottom: -10%;
+						right: -10%;
+						opacity: 0.5;
+					}
+					.my-image {
+						z-index: 2;
+						position: absolute;
+						bottom: 1%;
+					}
+					.sq-1 {
+						height: 50px;
+						width: 50px;
+						border-right: 2px red solid;
+						border-top: 2px red solid;
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+					.sq-2 {
+						height: 50px;
+						width: 50px;
+						border-left: 2px red solid;
+						border-bottom: 2px red solid;
+						position: absolute;
+						bottom: 0;
+						left: 0;
+					}
+				</style>
 				<div class="rightSection">
-					<img src="./images/developer.png" alt="" />
+					<div class="rightImage">
+						<div class="top-circle"></div>
+						<div class="sq-1"></div>
+						<div class="my-image-div">
+							<img class="my-image" src="./images/sumant-pic.png" alt="my-image" />
+						</div>
+						<div class="sq-2"></div>
+						<div class="bottom-circle"></div>
+					</div>
+					<!-- <img src="./images/developer.png" alt="" /> -->
 				</div>
 			</section>
 			<hr />
@@ -137,11 +218,12 @@
 				<div class="about">
 					<p>
 						Welcome! I'm <i><b>Sumant Kumar</b></i
-						>, a dedicated college student pursuing a <b>B.Tech</b> in Computer Science and Engineering
-						from <b><i>Lovely Professional University</i></b>, Punjab. Passionate about Computer Science, I'm
-						eager to contribute to the industry. With a strong foundation in computer technologies
-						and practical experience through internships and projects, I excel in solving real-world
-						challenges using Data Structures and Algorithms.
+						>, a dedicated college student pursuing a <b>B.Tech</b> in Computer Science and
+						Engineering from <b><i>Lovely Professional University</i></b
+						>, Punjab. Passionate about Computer Science, I'm eager to contribute to the industry.
+						With a strong foundation in computer technologies and practical experience through
+						internships and projects, I excel in solving real-world challenges using Data Structures
+						and Algorithms.
 					</p>
 					<br />
 					<p>
@@ -161,7 +243,7 @@
 
 					<br />
 					<p>Thank you for visiting my portfolio, and I look forward to hearing from you soon!</p>
-<br>
+					<br />
 					<p>Best regards,</p>
 					<p>Sumant Kumar</p>
 				</div>
@@ -181,6 +263,7 @@
 							<button class="view-certificate">
 								<a
 									href="https://www.linkedin.com/learning/certificates/49f23a74a924bcf22116e7a14a47c80ac0ef393945f2ee4fdafffeb41d5b589e?trk=backfilled_certificate"
+									target="_blank"
 								>
 									View Cerificate
 								</a>
@@ -188,6 +271,7 @@
 							<button class="view-certificate">
 								<a
 									href="https://www.linkedin.com/learning/paths/explore-app-development-with-the-mern-stack"
+									target="_blank"
 								>
 									View Course
 								</a>
@@ -205,6 +289,7 @@
 							<button class="view-certificate">
 								<a
 									href="https://drive.google.com/file/d/1gzCLFdtTTdIHrpi3f-95xTGAa9Dr6ekn/view?usp=sharing"
+									target="_blank"
 								>
 									View Cerificate
 								</a>
@@ -226,12 +311,29 @@
 								</a>
 							</button>
 							<button class="view-certificate">
-								<a href="https://trailblazer.me/id/sumant1302"> View Trailhead </a>
+								<a href="https://trailblazer.me/id/sumant1302" target="_blank"> View Trailhead </a>
 							</button>
 							<hr style="color: black" />
 							<div class="issue-details">
 								<div class="left">Grazitti Interactive</div>
 								<div class="right">Jan 2023</div>
+							</div>
+						</div>
+						<div class="certificate card">
+							<img src="./images/java-infosys-certificate.png" />
+							<h5>Java Programming</h5>
+							<button class="view-certificate">
+								<a
+									href="https://drive.google.com/file/d/1KjZWo9Y1iyfatvPPHEA2iN7OSYAgvIvT/view?usp=sharing"
+									target="_blank"
+								>
+									View Cerificate
+								</a>
+							</button>
+							<hr style="color: black" />
+							<div class="issue-details">
+								<div class="left">Infosys SpringBoard</div>
+								<div class="right">July 2023</div>
 							</div>
 						</div>
 					</div>
@@ -253,10 +355,12 @@
 							/>
 							<h5>Real Estate FullStack Website</h5>
 							<button class="view-certificate">
-								<a href="http://realestatekings.herokuapp.com/"> View Website </a>
+								<a href="http://realestatekings.herokuapp.com/" target="_blank"> View Website </a>
 							</button>
 							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/realEstate-Kings"> View GitHub Repo </a>
+								<a href="https://github.com/sumant1302/realEstate-Kings" target="_blank">
+									View GitHub Repo
+								</a>
 							</button>
 
 							<hr style="color: black" />
@@ -273,7 +377,7 @@
 							/>
 							<h5>Crime Reporting Software</h5>
 							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/Crime-Reporting-Software">
+								<a href="https://github.com/sumant1302/Crime-Reporting-Software" target="_blank">
 									View GitHub Repo
 								</a>
 							</button>
@@ -294,7 +398,9 @@
 								<a href="https://touchtype-93286.web.app/"> View Website </a>
 							</button>
 							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/web-touch-typing"> View GitHub Repo </a>
+								<a href="https://github.com/sumant1302/web-touch-typing" target="_blank">
+									View GitHub Repo
+								</a>
 							</button>
 
 							<hr style="color: black" />
@@ -311,10 +417,12 @@
 							/>
 							<h5>FarmDirect E-Comm Website</h5>
 							<button class="view-certificate">
-								<a href="https://farmdirect-11.web.app/"> View Website </a>
+								<a href="https://farmdirect-11.web.app/" target="_blank"> View Website </a>
 							</button>
 							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/farm-direct"> View GitHub Repo </a>
+								<a href="https://github.com/sumant1302/farm-direct" target="_blank">
+									View GitHub Repo
+								</a>
 							</button>
 
 							<hr style="color: black" />
@@ -385,19 +493,19 @@
 				<div class="footer-third">
 					<h4>Connect with me!</h4>
 					<p>
-						<a href="http://www.linkedin.com/in/sumant1302"
+						<a href="http://www.linkedin.com/in/sumant1302" target="_blank"
 							><img
 								class="image-logo"
 								src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png"
 								alt="Insta Logo"
 						/></a>
-						<a href="http://"
+						<a href="https://www.instagram.com/_sumant_1302/" target="_blank"
 							><img
 								class="image-logo"
 								src="https://icon-library.com/images/instagram-logo-icon-png/instagram-logo-icon-png-10.jpg"
 								alt="Insta Logo"
 						/></a>
-						<a href="https://www.github.com/sumant1302"
+						<a href="https://www.github.com/sumant1302" target="_blank"
 							><img
 								class="image-logo"
 								src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
@@ -411,12 +519,8 @@
 		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 		<script>
 			var typed = new Typed("#element", {
-				strings: [
-					"<i>Web</i> Developer",
-					"<i>Android</i> Developer",
-					"&amp; <i>Java</i> Developer",
-				],
-				typeSpeed: 50,
+				strings: ["<i>Web</i> Developer", "<i>Android</i> Developer", "<i>Java</i> Developer"],
+				typeSpeed: 40,
 			});
 		</script>
 	</body>
