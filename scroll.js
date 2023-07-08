@@ -1,6 +1,6 @@
 //Typing content in the hoem-main section
 var typed = new Typed("#element", {
-	strings: ["<i>Web</i> Developer", "<i>Android</i> Developer", "&#38; <i>Java</i> Developer"],
+	strings: ["<i>Web</i> Developer", "<i>Data</i> Analyst", "&#38; <i>Java</i> Developer"],
     typeSpeed: 40,
     loop: true,
 });
