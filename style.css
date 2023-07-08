@@ -185,26 +185,45 @@ main hr {
 .work-exp::-webkit-scrollbar {
 	display: none;
 }
+.work-box {
+	position: relative;
+	height: 350px;
+}
+@media screen and (max-width:600px) {
+	.secondSection {
+		height: fit-content;
+	}
+	.work-exp {
+		height: 400px;
+	}
+}
 .text-gray {
 	color: gray;
 }
 .image-top {
 	width: 23px;
 	position: relative;
-	top: -32px;
-	left: -9px;
+	margin-right: 4px;
+}
+.vertical-image {
+	width: 23px;
+	display: inline;
+	position: absolute;
+	display: flex;
+	top: -30px;
+	left: 110px;
 }
 .vertical-title {
 	position: relative;
-	top: 75px;
-	width: 150px;
+	width: 180px;
+	left: 50%;
 }
 .vertical-desc {
 	position: relative;
-	color: gray;
-	top: 86px;
-	width: 150px;
-	font-size: 9px;
+	color: rgb(214, 248, 205);
+	width: 180px;
+	font-size: 10px;
+	left: 50%;
 }
 /* About section */
 div.about {
@@ -214,6 +233,9 @@ div.about {
 	max-width: 100vw;
 	padding:2vw 5vw;
 	margin: auto;
+}
+section >  h2 {
+	font-size: 1.9rem;
 }
 
 /* Certification section */
@@ -306,6 +328,12 @@ img.op-5 {
 }
 #projects .certificate {
 	border-radius: 10px;
+}
+.container-projects {
+	overflow: scroll;
+}
+.container-projects::-webkit-scrollbar {
+	display: none;
 }
 /* Contact Form */
 .sixthSection {
