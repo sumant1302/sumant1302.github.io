@@ -10,6 +10,14 @@ body {
 	color: white;
 	font-family: "Poppins", sans-serif;
 }
+body::-webkit-scrollbar {
+	background-color: white;
+	width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: sienna;
+	border-radius: 2.5px;
+}
 /* Portfolio logo */
 .portfolio-logo {
 	display: flex;
@@ -25,6 +33,12 @@ body {
 		display: none;
 	}
 	
+}
+/* Navigation Bar */
+header {
+	position: sticky;
+	top: 0;
+	z-index: 3;
 }
 nav {
 	display: flex;
@@ -95,16 +109,18 @@ nav ul li a:hover {
 	align-items: center;
 	margin: 80px 0;
 }
-@media screen and (max-width: 600px) {
-	.firstSection {
-		flex-direction: column;
-	}
-	.firstSection > div {
-		width: 100%;
-	}
-}
+
 .firstSection > div {
 	width: 40%;
+}
+@media screen and (max-width: 600px) {
+	.firstSection {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.firstSection > div {
+		width: 70%;
+	}
 }
 .leftSection {
 	font-size: 3rem;
@@ -249,10 +265,17 @@ section >  h2 {
     margin: auto;
 }
 .container-certificate {
-	overflow: scroll;
+	overflow-y: hidden;
+	overflow-x: scroll;
 }
 .container-certificate::-webkit-scrollbar {
-	display: none;
+	/* display: none; */
+	background-color: #0a12f2;
+	height: 5px;
+}
+.container-certificate::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 2.5px;
 }
 .overflow-cont {
 	display: inline-flex;
@@ -330,10 +353,17 @@ img.op-5 {
 	border-radius: 10px;
 }
 .container-projects {
-	overflow: scroll;
+	overflow-y: hidden;
+	overflow-x: scroll;
 }
 .container-projects::-webkit-scrollbar {
-	display: none;
+	/* display: none; */
+	background-color: #0a12f2;
+	height: 5px;
+}
+.container-projects::-webkit-scrollbar-thumb {
+	background-color: grey;
+	border-radius: 2.5px;
 }
 /* Contact Form */
 .sixthSection {
