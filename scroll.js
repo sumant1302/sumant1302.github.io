@@ -1,27 +1,46 @@
-//Typing content in the hoem-main section
-var typed = new Typed("#element", {
-	strings: ["<i>Web</i> Developer", "<i>Data</i> Analyst", "&#38; <i>Java</i> Developer"],
-    typeSpeed: 40,
-    loop: true,
-});
-//Scrolling through the mouse horizontally in certificate section
-const scrollContainer1 = document.querySelector(".container-certificate");
+const focusRotator = document.querySelector("#focus-rotator");
+const navToggle = document.querySelector(".nav-toggle");
+const siteNav = document.querySelector(".site-nav");
+const siteHeader = document.querySelector(".site-header");
+const footerYear = document.querySelector("#year");
 
-scrollContainer1.addEventListener("wheel", (evt) => {
-	evt.preventDefault();
-	scrollContainer1.scrollLeft += evt.deltaY;
-});
-const scrollContainer2 = document.querySelector(".container-projects");
+const focusAreas = [
+	"Enterprise modernization",
+	"API performance",
+	"Secure full-stack delivery",
+	"Reusable AI interfaces",
+];
 
-scrollContainer2.addEventListener("wheel", (evt) => {
-	evt.preventDefault();
-	scrollContainer2.scrollLeft += evt.deltaY;
-});
+let focusIndex = 0;
 
-const scrollContainer3 = document.querySelector(".work-exp");
+if (focusRotator) {
+	setInterval(() => {
+		focusIndex = (focusIndex + 1) % focusAreas.length;
+		focusRotator.textContent = focusAreas[focusIndex];
+	}, 2400);
+}
 
-scrollContainer3.addEventListener("wheel", (evt) => {
-	evt.preventDefault();
-	scrollContainer3.scrollLeft += evt.deltaY;
-});
+if (navToggle && siteNav) {
+	navToggle.addEventListener("click", () => {
+		const isOpen = siteNav.classList.toggle("is-open");
+		navToggle.setAttribute("aria-expanded", String(isOpen));
+	});
+
+	siteNav.querySelectorAll("a").forEach((link) => {
+		link.addEventListener("click", () => {
+			siteNav.classList.remove("is-open");
+			navToggle.setAttribute("aria-expanded", "false");
+		});
+	});
+}
+
+if (siteHeader) {
+	window.addEventListener("scroll", () => {
+		siteHeader.classList.toggle("scrolled", window.scrollY > 16);
+	});
+}
+
+if (footerYear) {
+	footerYear.textContent = new Date().getFullYear();
+}
 

@@ -4,615 +4,558 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="viewport" content="width=device-width" />
+		<title>Sumant Kumar | Software Engineer</title>
 		<meta
-			name="viewport"
-			content="initial-scale=1, maximum-scale=1, user-
-  scalable=yes"
+			name="description"
+			content="Portfolio of Sumant Kumar, a Software Engineer focused on backend systems, APIs, modernization, and full-stack delivery."
 		/>
-		<title>Sumant-Developer Portfolio</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@100&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap"
 			rel="stylesheet"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
 		/>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			<nav>
-				<div class="left portfolio-logo">
-					<i>Sumant's</i>
-					<div class="folio">
-						FOL<b style="color: chartreuse">i</b><b style="color: rgb(243, 62, 7)">O</b>
-					</div>
-				</div>
-				<div class="right">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#certifications">Certifications</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact-form">Contact Me</a></li>
-					</ul>
-				</div>
-				<style>
-					.material-symbols-outlined {
-						font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-					}
-					.material-symbols-outlined {
-						color: white;
-					}
-				</style>
-				<div class="dropdown" style="float: right">
-					<button class="dropbtn"><span class="material-symbols-outlined"> menu </span></button>
-					<div class="dropdown-content">
-						<a href="#">Home</a>
-						<a href="#about">About</a>
-						<a href="#certifications">Certifications</a>
-						<a href="#projects">Projects</a>
-						<a href="#contact-form">Contact Me</a>
-					</div>
-				</div>
-			</nav>
+		<header class="site-header">
+			<div class="container nav-shell">
+				<a class="brand" href="#home">
+					<span class="brand-mark">SK</span>
+					<span class="brand-copy">
+						<span class="brand-name">Sumant Kumar</span>
+						<span class="brand-role">Software Engineer</span>
+					</span>
+				</a>
+				<button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle menu">
+					<span></span>
+					<span></span>
+				</button>
+				<nav class="site-nav" aria-label="Primary">
+					<a href="#about">About</a>
+					<a href="#experience">Experience</a>
+					<a href="#featured-project">Featured Project</a>
+					<a href="#projects">Projects</a>
+					<a href="#skills">Skills</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
 		</header>
 
-		<main>
-			<section class="firstSection">
-				<div class="leftSection">
-					Hi, My name is <span class="purple">Sumant</span>
-					<div>and I am a</div>
-					<span id="element"></span>
-					<div class="buttons">
+		<main id="home">
+			<section class="hero section">
+				<div class="container hero-grid">
+					<div class="hero-copy">
+						<p class="eyebrow">Backend-first engineer with enterprise full-stack experience</p>
+						<h1>
+							Building performant products with
+							<span class="accent-text">Java, Spring Boot, Angular, and React.</span>
+						</h1>
+						<p class="hero-summary">
+							I am a Software Engineer with around 2 years of experience at TransUnion, working on
+							enterprise applications in the TruContact domain. My recent work has centered on API
+							development, modernization, performance tuning, and secure full-stack delivery.
+						</p>
+						<div class="hero-actions">
+							<a
+								class="button button-primary"
+								href="https://drive.google.com/file/d/1b2xYdtYyroaI77P5OUs1GAGJDAi2DjcA/view?usp=sharing"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Download Resume
+							</a>
+							<a
+								class="button button-secondary"
+								href="https://www.linkedin.com/in/sumant1302"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								LinkedIn
+							</a>
+							<a
+								class="button button-secondary"
+								href="https://github.com/sumant1302"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								GitHub
+							</a>
+						</div>
+						<div class="status-row">
+							<div class="status-pill">
+								<span class="status-dot"></span>
+								<span>Open to product engineering opportunities</span>
+							</div>
+							<p class="status-note">
+								Currently working on enterprise modernization and reusable AI interface tooling.
+							</p>
+						</div>
+					</div>
+
+					<div class="hero-visual">
+						<div class="portrait-card">
+							<div class="portrait-top">
+								<p>Current focus</p>
+								<h2 id="focus-rotator">Enterprise modernization</h2>
+							</div>
+							<img src="./images/sumant-image.png" alt="Portrait of Sumant Kumar" />
+							<div class="portrait-panel">
+								<div>
+									<span class="panel-label">Role</span>
+									<strong>Associate Software Developer</strong>
+								</div>
+								<div>
+									<span class="panel-label">Domain</span>
+									<strong>TruContact at TransUnion</strong>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="metrics section">
+				<div class="container">
+					<div class="section-heading">
+						<p class="eyebrow">Impact snapshot</p>
+						<h2>Recent outcomes that matter in engineering teams</h2>
+					</div>
+					<div class="metrics-grid">
+						<article class="metric-card">
+							<h3>25%</h3>
+							<p>Improved API response time by optimizing queries and backend services.</p>
+						</article>
+						<article class="metric-card">
+							<h3>15%</h3>
+							<p>Reduced memory usage through Java 8 to Java 21 migration work.</p>
+						</article>
+						<article class="metric-card">
+							<h3>10+</h3>
+							<p>Resolved critical vulnerabilities to strengthen application security.</p>
+						</article>
+						<article class="metric-card">
+							<h3>8+</h3>
+							<p>Built REST APIs supporting enterprise workflows and internal systems.</p>
+						</article>
+						<article class="metric-card">
+							<h3>20%</h3>
+							<p>Improved frontend performance with Angular optimizations and cleaner rendering.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="about">
+				<div class="container about-grid">
+					<div class="section-heading">
+						<p class="eyebrow">About</p>
+						<h2>Backend-focused, product-minded, and comfortable across the stack</h2>
+					</div>
+					<div class="about-content">
+						<p>
+							My work is centered on building reliable software that improves system performance,
+							simplifies workflows, and helps teams move from legacy applications to maintainable
+							modern stacks. I spend most of my time on Java and Spring Boot, while also contributing
+							to Angular and React-based frontend experiences when the product needs it.
+						</p>
+						<p>
+							At TransUnion, I have worked on enterprise applications in the TruContact space,
+							including legacy AngularJS and Java systems as well as modernization initiatives using
+							Spring Boot and Angular 19. I enjoy engineering problems where performance, security,
+							and long-term maintainability all matter at the same time.
+						</p>
+					</div>
+					<div class="tech-strip" aria-label="Primary technologies">
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+							alt="Java"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+							alt="Spring Boot"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+							alt="Angular"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+							alt="React"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+							alt="MySQL"
+						/>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+							alt="MongoDB"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="experience">
+				<div class="container">
+					<div class="section-heading">
+						<p class="eyebrow">Experience</p>
+						<h2>Enterprise engineering with measurable delivery impact</h2>
+					</div>
+					<article class="experience-card">
+						<div class="experience-top">
+							<div>
+								<p class="company">TransUnion</p>
+								<h3>Associate Software Developer</h3>
+							</div>
+							<p class="experience-duration">June 2024 - Present</p>
+						</div>
+						<ul class="experience-list">
+							<li>Working as a full-stack engineer on enterprise applications in the TruContact domain.</li>
+							<li>Maintaining legacy AngularJS plus Java applications while improving performance and reliability.</li>
+							<li>Contributing to modernization initiatives that move business workflows to Spring Boot and Angular 19.</li>
+							<li>Built 8+ REST APIs for enterprise workflows and improved API response time by around 25%.</li>
+							<li>Reduced memory usage by around 15% during migration work from Java 8 to Java 21.</li>
+							<li>Resolved 10+ critical vulnerabilities, helping improve security posture across the application.</li>
+							<li>Improved frontend responsiveness by around 20% through Angular optimization and UI cleanup.</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section class="section feature-section" id="featured-project">
+				<div class="container featured-grid">
+					<div class="section-heading">
+						<p class="eyebrow">Featured project</p>
+						<h2>Reusable AI chatbot UI designed for product teams</h2>
+						<p class="section-copy">
+							This is the project that best represents the direction I want to keep growing in:
+							practical AI interfaces backed by clean backend integration and reusable frontend design.
+						</p>
+					</div>
+					<article class="featured-card">
+						<div class="featured-badge">Ongoing</div>
+						<h3>AI Chatbot UI</h3>
+						<p class="project-stack">Angular, Spring Boot, LLM API integration, npm package design</p>
+						<p>
+							A plug-and-play chatbot interface built to integrate with LLM providers such as OpenAI
+							or Gemini. The focus is on reusable UI composition, scalable integration points, and
+							responsive real-time experiences that can be embedded into different enterprise or
+							product workflows.
+						</p>
+						<ul class="project-highlights">
+							<li>Designed as a reusable package instead of a one-off internal screen.</li>
+							<li>Structured for scalable API integration and future multi-provider support.</li>
+							<li>Focused on real-time user experience, maintainability, and enterprise readiness.</li>
+						</ul>
+					</article>
+				</div>
+			</section>
+
+			<section class="section" id="projects">
+				<div class="container">
+					<div class="section-heading">
+						<p class="eyebrow">Projects</p>
+						<h2>Selected work across enterprise systems and full-stack products</h2>
+					</div>
+					<div class="projects-grid">
+						<article class="project-card">
+							<div class="project-card-top">
+								<span class="project-type">Enterprise</span>
+								<h3>SSP - Self Service Portal</h3>
+								<p class="project-stack">AngularJS, Enterprise UI maintenance</p>
+							</div>
+							<p>
+								Legacy customer-facing portal with 8+ templates that allows users to correct and
+								update order-related data. Worked on maintaining and improving the application while
+								handling business-critical flows in a mature enterprise environment.
+							</p>
+						</article>
+
+						<article class="project-card">
+							<div class="project-card-top">
+								<span class="project-type">Modernization</span>
+								<h3>Application Modernization Project</h3>
+								<p class="project-stack">Spring Boot, Angular 19, REST APIs</p>
+							</div>
+							<p>
+								Part of a larger modernization initiative to move legacy systems onto a scalable,
+								maintainable architecture. Building backend APIs and frontend modules for modern
+								enterprise workflows from May 2025 onward.
+							</p>
+						</article>
+
+						<article class="project-card">
+							<div class="project-card-top">
+								<span class="project-type">Full stack</span>
+								<h3>Real Estate Platform</h3>
+								<p class="project-stack">PHP, MySQL, Search and filtering</p>
+							</div>
+							<p>
+								A full-stack platform for buyers, sellers, and agents with property listing, search,
+								and filtering flows. Built with PHP and MySQL, with a clear path for future
+								migration to a Spring Boot based backend if expanded further.
+							</p>
+						</article>
+
+						<article class="project-card">
+							<div class="project-card-top">
+								<span class="project-type">AI engineering</span>
+								<h3>AI Chatbot UI</h3>
+								<p class="project-stack">Angular, Spring Boot, LLM APIs</p>
+							</div>
+							<p>
+								Reusable chatbot interface focused on real-time responses, scalable integration, and
+								a product-ready developer experience. Designed to work as a plug-and-play building
+								block instead of a single implementation.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="skills">
+				<div class="container">
+					<div class="section-heading">
+						<p class="eyebrow">Skills</p>
+						<h2>Tools and technologies I use to ship production-ready software</h2>
+					</div>
+					<div class="skills-grid">
+						<article class="skill-group">
+							<h3>Backend</h3>
+							<p>Java, Spring Boot, REST APIs, Microservices</p>
+							<div class="skill-icons">
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+										alt="Java"
+									/>
+									<span>Java</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+										alt="Spring Boot"
+									/>
+									<span>Spring Boot</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg"
+										alt="REST APIs"
+									/>
+									<span>REST APIs</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+										alt="Microservices"
+									/>
+									<span>Microservices</span>
+								</div>
+							</div>
+						</article>
+						<article class="skill-group">
+							<h3>Frontend</h3>
+							<p>Angular, React, JavaScript</p>
+							<div class="skill-icons">
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+										alt="Angular"
+									/>
+									<span>Angular</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+										alt="React"
+									/>
+									<span>React</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+										alt="JavaScript"
+									/>
+									<span>JavaScript</span>
+								</div>
+							</div>
+						</article>
+						<article class="skill-group">
+							<h3>Database</h3>
+							<p>MySQL, MongoDB</p>
+							<div class="skill-icons">
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+										alt="MySQL"
+									/>
+									<span>MySQL</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+										alt="MongoDB"
+									/>
+									<span>MongoDB</span>
+								</div>
+							</div>
+						</article>
+						<article class="skill-group">
+							<h3>Tools</h3>
+							<p>Git, Maven, Docker (basic), Postman</p>
+							<div class="skill-icons">
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+										alt="Git"
+									/>
+									<span>Git</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg"
+										alt="Maven"
+									/>
+									<span>Maven</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+										alt="Docker"
+									/>
+									<span>Docker</span>
+								</div>
+								<div class="skill-chip">
+									<img
+										src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+										alt="Postman"
+									/>
+									<span>Postman</span>
+								</div>
+							</div>
+						</article>
+						<article class="skill-group">
+							<h3>Concepts</h3>
+							<p>System Design (learning), API Design, Performance Optimization</p>
+							<div class="skill-icons">
+								<div class="skill-chip text-chip">
+									<span>System Design</span>
+								</div>
+								<div class="skill-chip text-chip">
+									<span>API Design</span>
+								</div>
+								<div class="skill-chip text-chip">
+									<span>Performance</span>
+								</div>
+							</div>
+						</article>
+						<article class="skill-group">
+							<h3>Cloud</h3>
+							<p>Learning AWS</p>
+							<div class="skill-icons">
+								<div class="skill-chip">
+									<img
+										src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/amazonaws.svg"
+										alt="AWS"
+									/>
+									<span>AWS</span>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="now">
+				<div class="container now-card">
+					<div>
+						<p class="eyebrow">What I'm currently working on</p>
+						<h2>Modern enterprise systems with stronger performance and better developer experience</h2>
+					</div>
+					<div class="now-list">
+						<p>Modernizing legacy enterprise applications toward Spring Boot and Angular 19.</p>
+						<p>Improving APIs, runtime efficiency, and secure coding practices in production systems.</p>
+						<p>Exploring reusable AI product components that can fit into real business workflows.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section contact-section" id="contact">
+				<div class="container contact-card">
+					<div>
+						<p class="eyebrow">Contact</p>
+						<h2>Let's connect for backend, full-stack, or modernization roles</h2>
+						<p class="section-copy">
+							I am looking for opportunities where I can contribute to engineering teams working on
+							scalable products, modern backend systems, and high-impact user experiences.
+						</p>
+					</div>
+					<div class="contact-actions">
 						<a
-							href="https://drive.google.com/file/d/1jZygC9uHlnxHOyQ_cNtFhWc6pg6LD-_G/view?usp=sharing"
+							class="button button-primary"
+							href="https://www.linkedin.com/in/sumant1302"
 							target="_blank"
 							rel="noopener noreferrer"
-							><button class="btn1">Download Resume</button></a
 						>
-						<a href="http://www.github.com/sumant1302" target="_blank"
-							><button class="btn2">Visit Github</button></a
+							<img
+								class="button-icon button-icon--invert"
+								src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg"
+								alt=""
+								aria-hidden="true"
+							/>
+							Connect on LinkedIn
+						</a>
+						<a
+							class="button button-secondary"
+							href="https://github.com/sumant1302"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
+							<img
+								class="button-icon"
+								src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg"
+								alt=""
+								aria-hidden="true"
+							/>
+							View GitHub
+						</a>
+						<a
+							class="button button-secondary"
+							href="https://drive.google.com/file/d/1b2xYdtYyroaI77P5OUs1GAGJDAi2DjcA/view?usp=sharing"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<img
+								class="button-icon"
+								src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googledrive.svg"
+								alt=""
+								aria-hidden="true"
+							/>
+							Resume
+						</a>
 					</div>
 				</div>
-				<style>
-					.rightSection {
-						position: relative;
-						height: 400px;
-						/* border-bottom: 2px  rgb(234, 133, 51) solid ; */
-					}
-					.top-circle {
-						width: 100%;
-						height: 100%;
-						background-color: rgb(249, 151, 71);
-						border-radius: 50%;
-						position: absolute;
-						top: -10%;
-						left: -10%;
-						opacity: 0.8;
-					}
-					.bottom-circle {
-						width: 50%;
-						height: 50%;
-						background-color: rgb(247, 114, 5);
-						border-radius: 50%;
-						position: absolute;
-						bottom: -10%;
-						right: -10%;
-						opacity: 0.5;
-					}
-					.my-image {
-						z-index: 2;
-						position: absolute;
-						bottom: 1%;
-					}
-					.sq-1 {
-						height: 50px;
-						width: 50px;
-						border-right: 2px red solid;
-						border-top: 2px red solid;
-						position: absolute;
-						top: 0;
-						right: 0;
-					}
-					.sq-2 {
-						height: 50px;
-						width: 50px;
-						border-left: 2px red solid;
-						border-bottom: 2px red solid;
-						position: absolute;
-						bottom: 0;
-						left: 0;
-					}
-				</style>
-				<div class="rightSection">
-					<div class="rightImage">
-						<div class="top-circle"></div>
-						<div class="sq-1"></div>
-						<div class="my-image-div">
-							<img class="my-image" src="./images/sumant-pict.png" alt="my-image" />
-						</div>
-						<div class="sq-2"></div>
-						<!-- <div class="bottom-circle"></div> -->
-					</div>
-					<!-- <img src="./images/developer.png" alt="" /> -->
-				</div>
 			</section>
-			<hr />
-			<section class="secondSection" style="position: relative">
-				<span class="text-gray">What I have done so far?</span>
-				<h2>Work Experience &#38; Learning Path</h2>
-				<div class="work-exp">
-					<div class="box">
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img
-									class="image-top"
-									src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-									alt="HTML Logo"
-								/>
-								<img class="image-top" src="./images/css-logo.png" alt="CSS Logo" />
-								<img class="image-top" src="./images//js-logo.png" alt="JS Logo" />
-							</div>
-							<div class="vertical-title">HTML,CSS,JS(2020)</div>
-							<div class="vertical-desc">
-								HTML, CSS, and JavaScript provides a strong foundation for web development. HTML
-								defines the structure of web pages, CSS controls their appearance, and JavaScript
-								adds interactivity. Mastering these languages empowered me to create dynamic,
-								visually appealing websites and web applications, enhancing the user experience and
-								functionality.
-							</div>
-						</div>
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img
-									class="image-top"
-									src="https://www.php.net/images/logos/new-php-logo.png"
-									alt="php logo"
-								/>
-							</div>
-							<div class="vertical-title">PHP and Heroku (2021)</div>
-							<div class="vertical-desc">
-								With PHP, we can create dynamic web pages, processform data, handle file uploads,
-								and build complex backend logic, making it an essential skill for building dynamic
-								and interactive web applications. I used it with my Real Esate Website Project to
-								upload data and render through backend databses. I used Heroku for deploying this
-								project to backend.
-							</div>
-						</div>
-
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img
-									class="image-top"
-									src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
-									alt="SQL Logo"
-								/>
-							</div>
-							<div class="vertical-title">SQL(2021)</div>
-							<div class="vertical-desc">
-								SQL (Structured Query Language) is essential for working with relational databases.
-								SQL allows you to interact with databases to manage, manipulate, and retrieve data
-								effectively. With SQL, you can create and modify database schemas, store and
-								retrieve data, perform complex queries, filter and sort information, and aggregate
-								and analyze data. I have utilised this in my projects such as Real Estate website
-								and Python Crime Reporting softwares.
-							</div>
-						</div>
-
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img
-									class="image-top"
-									src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-									alt="Python Logo"
-								/>
-							</div>
-							<div class="vertical-title">Python (2021)</div>
-							<div class="vertical-desc">
-								With Python, you can develop scalable and efficient software solutions, automate
-								tasks, create web APIs, handle data manipulation, implement algorithms, and much
-								more. I developed a Crime Reporting software as my class project where users can
-								file complaints through the software. The data is stored in SQL databases and same
-								can be viewed by admin through their part of the application.
-							</div>
-						</div>
-
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img class="image-top" src="./images/react-logo.png" alt="React Logo" />
-							</div>
-							<div class="vertical-title">ReactJS (2022)</div>
-							<div class="vertical-desc">
-								React.js empowers you to develop dynamic and interactive user interfaces for web
-								applications. React.js is a popular JavaScript library that enables the creation of
-								reusable UI components. With React.js, you can efficiently manage the state and
-								rendering of components, handle user events, and build complex UI structures.
-							</div>
-						</div>
-
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img class="image-top" src="./images/nodejs-logo.png" alt="NodeJS Logo" />
-								<img
-									class="image-top"
-									src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld"
-									alt="NodeJS Logo"
-								/>
-							</div>
-							<div class="vertical-title">Node.JS and MongoDB (2022)</div>
-							<div class="vertical-desc">
-								Node.js and MongoDB provides a powerful combination for building scalable and
-								data-driven applications. Node.js allows you to develop server-side applications
-								using JavaScript, while MongoDB serves as a NoSQL database that stores and retrieves
-								data in a flexible and scalable manner. With Node.js and MongoDB, you can easily
-								handle data operations, create RESTful APIs, implement real-time features, and build
-								full-stack applications.
-							</div>
-						</div>
-						<div class="work-box">
-							<div class="vertical"></div>
-							<div class="vertical-image">
-								<img class="image-top" src="./images/nodejs-logo.png" alt="NodeJS Logo" />
-								<img
-									class="image-top"
-									src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/erkxwhl1gd48xfhe2yld"
-									alt="NodeJS Logo"
-								/>
-							</div>
-							<div class="vertical-title">MS Excel and Tableau (2022)</div>
-							<div class="vertical-desc">
-								Tableau and Excel equips me with essential skills for data analysis and
-								visualization. Excel is a powerful spreadsheet tool that enables you to manage and
-								manipulate data, perform calculations, create charts, and generate reports. Tableau,
-								on the other hand, is a data visualization and business intelligence tool that
-								allows you to explore data, create interactive dashboards, and share insights.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div style="position: relative; bottom: 0; text-align: end; width: 100%">
-					Scroll to view more ➡️
-				</div>
-			</section>
-
-			<hr />
-			<section class="thirdSection" id="about">
-				<h2>About Me</h2>
-				<br />
-				<div class="about">
-					<p>
-						Welcome! I'm <i><b>Sumant Kumar</b></i
-						>, a dedicated college student pursuing a <b>B.Tech</b> in Computer Science and
-						Engineering from <b><i>Lovely Professional University</i></b
-						>, Punjab. Passionate about Computer Science, I'm eager to contribute to the industry.
-						With a strong foundation in computer technologies and practical experience through
-						internships and projects, I excel in solving real-world challenges using Data Structures
-						and Algorithms.
-					</p>
-					<br />
-					<p>
-						Active participation in hackathons and projects has enhanced my leadership, teamwork,
-						and communication skills, enabling effective collaboration with diverse teams. My
-						portfolio showcases projects that highlight my technical abilities and problem-solving
-						prowess, demonstrating quick learning and efficient application of knowledge.
-					</p>
-					<br />
-					<p>
-						I'm excited to apply my skills in a professional setting, contributing to an innovative
-						and growth-oriented company. I adapt quickly, have a strong work ethic, and thrive in
-						dynamic environments. Currently seeking entry-level Developer roles, I'm motivated to
-						continue learning and contribute to a team's success. Let's connect and explore how I
-						can make an impact!
-					</p>
-
-					<br />
-					<p>Thank you for visiting my portfolio, and I look forward to hearing from you soon!</p>
-					<br />
-					<p>Best regards,</p>
-					<p>Sumant Kumar</p>
-				</div>
-			</section>
-			<hr />
-
-			<section class="fourthSection" id="certifications">
-				<h2>Certifications</h2>
-				<br />
-				<div class="container-certificate">
-					<div class="overflow-cont">
-						<div class="certificate card">
-							<img
-								src="https://media.licdn.com/dms/image/C4D1FAQHkOIwaxS94dA/feedshare-document-cover-images_1280/0/1678452449613?e=1689904800&v=beta&t=CVB2ljDiFlnb7srz7ZH0cybKrvV_ZZDqpUvlblL-0Ko"
-								alt="MERN certificate LinkedIn"
-							/>
-							<h5>Explore App Development with the MERN Stack</h5>
-							<button class="view-certificate">
-								<a
-									href="https://www.linkedin.com/learning/certificates/49f23a74a924bcf22116e7a14a47c80ac0ef393945f2ee4fdafffeb41d5b589e?trk=backfilled_certificate"
-									target="_blank"
-								>
-									View Cerificate
-								</a>
-							</button>
-							<button class="view-certificate">
-								<a
-									href="https://www.linkedin.com/learning/paths/explore-app-development-with-the-mern-stack"
-									target="_blank"
-								>
-									View Course
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">LinkedIn Learning</div>
-								<div class="right">April 2022</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img src="./images/dsa-infosys-certificate.png" />
-							<h5>Data Structures and Algorithms using Java</h5>
-							<button class="view-certificate">
-								<a
-									href="https://drive.google.com/file/d/1gzCLFdtTTdIHrpi3f-95xTGAa9Dr6ekn/view?usp=sharing"
-									target="_blank"
-								>
-									View Cerificate
-								</a>
-							</button>
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">Infosys SpringBoard</div>
-								<div class="right">June 2023</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img src="./images/salesforce-certificate.png" alt="MERN certificate LinkedIn" />
-							<h5>Salesforce Catalyst Plus</h5>
-							<button class="view-certificate">
-								<a
-									href="https://drive.google.com/file/d/1KzI88lVFRORt5m_-XYLxzmpAFgeimKcJ/view?usp=sharing"
-								>
-									View Cerificate
-								</a>
-							</button>
-							<button class="view-certificate">
-								<a href="https://trailblazer.me/id/sumant1302" target="_blank"> View Trailhead </a>
-							</button>
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">Grazitti Interactive</div>
-								<div class="right">Jan 2023</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img src="./images/SkillSoft SDLC badge.png" alt="MERN certificate LinkedIn" />
-							<h5>Software Development Concepts</h5>
-							<button class="view-certificate">
-								<a
-									href="https://skillsoft.digitalbadges.skillsoft.com/3da78a1b-e76a-4067-87a4-af4ad73a73f4#gs.2cy95l"
-									target="_blank"
-								>
-									View Cerificate
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">SkillSoft</div>
-								<div class="right">July 2023</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img src="./images/java-infosys-certificate.png" />
-							<h5>Java Programming</h5>
-							<button class="view-certificate">
-								<a
-									href="https://drive.google.com/file/d/1KjZWo9Y1iyfatvPPHEA2iN7OSYAgvIvT/view?usp=sharing"
-									target="_blank"
-								>
-									View Cerificate
-								</a>
-							</button>
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">Infosys SpringBoard</div>
-								<div class="right">July 2023</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div style="position: relative; bottom: 0; text-align: end; width: 100%">
-					Scroll to view more ➡️
-				</div>
-			</section>
-
-			<hr />
-			<section class="fifthSection" id="projects">
-				<h2>Projects</h2>
-				<br />
-				<div class="container-projects">
-					<div class="overflow-cont">
-						<div class="certificate card">
-							<img
-								src="http://realestatekings.herokuapp.com/images/rsk-icon.png"
-								alt="Real-Estate-Website"
-							/>
-							<h5>Real Estate FullStack Website</h5>
-							<button class="view-certificate">
-								<a href="http://realestatekings.herokuapp.com/" target="_blank"> View Website </a>
-							</button>
-							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/realEstate-Kings" target="_blank">
-									View GitHub Repo
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">HTML|CSS|PHP|MySQL</div>
-								<div class="right">April, 2022</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img
-								class="op-5"
-								src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2014/11/it_photo_197371-scaled.jpg?resize=738%2C320&ssl=1"
-								alt="Crime Reporting Software"
-							/>
-							<h5>Crime Reporting Software</h5>
-							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/Crime-Reporting-Software" target="_blank">
-									View GitHub Repo
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">Python|SQL</div>
-								<div class="right">Nov 2022</div>
-							</div>
-						</div>
-						<div class="certificate card">
-							<img
-								src="https://www.wikihow.com/images/thumb/7/7f/Teach-Yourself-to-Touch-Type-Step-2-Version-2.jpg/v4-460px-Teach-Yourself-to-Touch-Type-Step-2-Version-2.jpg"
-								alt="TouchType-Website"
-							/>
-							<h5>TouchType Website using React</h5>
-							<button class="view-certificate">
-								<a href="https://touchtype-93286.web.app/"> View Website </a>
-							</button>
-							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/web-touch-typing" target="_blank">
-									View GitHub Repo
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">ReactJS|HTML|CSS</div>
-								<div class="right">May 2023</div>
-							</div>
-						</div>
-
-						<div class="certificate card">
-							<img
-								src="https://i.dawn.com/primary/2019/10/5da3dab0235ef.jpg"
-								alt="FarmDirect E-comm website"
-							/>
-							<h5>FarmDirect E-Comm Website</h5>
-							<button class="view-certificate">
-								<a href="https://farmdirect-11.web.app/" target="_blank"> View Website </a>
-							</button>
-							<button class="view-certificate">
-								<a href="https://github.com/sumant1302/farm-direct" target="_blank">
-									View GitHub Repo
-								</a>
-							</button>
-
-							<hr style="color: black" />
-							<div class="issue-details">
-								<div class="left">React|NodeJS</div>
-								<div class="right">June 2023</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div style="position: relative; bottom: 0; text-align: end; width: 100%">
-					Scroll to view more ➡️
-				</div>
-			</section>
-
-			<!-- <section class="sixthSection" id="contact-form">
-				<span class="text-gray">Feel free to Reach out!!</span>
-				<h2>Contact Me</h2>
-				<br />
-				<form action="POST">
-					<input type="text" name="text" id="name" placeholder="Enter Name" />
-					<input type="email" name="email" id="email" placeholder="Enter Email" />
-					<input
-						type="number"
-						name="phone"
-						id="phone"
-						placeholder="Enter Mobile"
-						min="1111111111"
-						max="9999999999"
-					/>
-					<textarea
-						name="query"
-						id="query"
-						cols="30"
-						rows="10"
-						placeholder="Enter your Query"
-					></textarea>
-					<input type="submit" value="Submit" />
-				</form>
-			</section> -->
-			<hr />
-			<section class="sixthSection" id="contact-form">
-				<span class="text-gray">Feel free to reach out or leave a review!!</span>
-				<h2>Contact Me</h2>
-				<div
-					data-tf-widget="VpUQPkHL"
-					data-tf-opacity="100"
-					data-tf-iframe-props="title=Developer Portfolio Feedback Form"
-					data-tf-transitive-search-params
-					data-tf-medium="snippet"
-					style="width: 100%; height: 500px; overflow: hidden; background: none"
-				></div>
-			</section>
-			<script src="//embed.typeform.com/next/embed.js"></script>
 		</main>
-		<footer>
-			<div class="footer">
-				<div class="footer-first">Sumant's Developer Portfolio</div>
-				<div class="footer-second">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#certifications">Certifications</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#contact-form">Contact Me</a></li>
-					</ul>
+
+		<footer class="site-footer">
+			<div class="container footer-shell">
+				<div>
+					<p class="footer-title">Sumant Kumar</p>
+					<p class="footer-copy">Software Engineer focused on APIs, modernization, and product delivery.</p>
 				</div>
-				<div class="footer-third">
-					<h4>Connect with me!</h4>
-					<p>
-						<a href="http://www.linkedin.com/in/sumant1302" target="_blank"
-							><img
-								class="image-logo"
-								src="https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-ya5g47j2.png"
-								alt="Insta Logo"
-						/></a>
-						<a href="https://www.instagram.com/_sumant_1302/" target="_blank"
-							><img
-								class="image-logo"
-								src="https://icon-library.com/images/instagram-logo-icon-png/instagram-logo-icon-png-10.jpg"
-								alt="Insta Logo"
-						/></a>
-						<a href="https://www.github.com/sumant1302" target="_blank"
-							><img
-								class="image-logo"
-								src="https://w7.pngwing.com/pngs/914/758/png-transparent-github-social-media-computer-icons-logo-android-github-logo-computer-wallpaper-banner-thumbnail.png"
-								alt="Insta Logo"
-						/></a>
-					</p>
+				<div class="footer-links">
+					<a href="#about">About</a>
+					<a href="#experience">Experience</a>
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
 				</div>
+				<p class="footer-note">Copyright <span id="year"></span> Sumant Kumar. All rights reserved.</p>
 			</div>
-			<div class="footer-rights">CopyRights &#169; SUMANT's PORTFOLIO | All Rights Reserved</div>
 		</footer>
-		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
 		<script src="./scroll.js"></script>
 	</body>
 </html>
+
